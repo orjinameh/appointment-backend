@@ -22,6 +22,10 @@ Content-Type: application/json
 GET http://localhost:4000/data/me
 Authorization: Bearer {{token}}
 
+###
+GET http://localhost:4000/data/me/getall
+Authorization: Bearer {{token}}
+
 
 ###
 POST http://localhost:4000/data/me/post
@@ -47,8 +51,6 @@ Content-Type: application/json
             "phone": "dfys"
 }
 
-<<<<<<< HEAD
-=======
 
 ###
 GET http://smartrecharge.ng/api/v1/http.php?api_key=0rp40z0w4srflnkf97hnav6nlqv9p31kwv86s9l&balance=true
@@ -68,7 +70,6 @@ POST https://smartrecharge.ng/api/v2/others/get_available_services.php/?api_key=
 ###
 POST https://smartrecharge.ng/api/v2/datashare/?api_key=0rp40z0w4srflnkf97hnav6nlqv9p31kwv86s9l&product_code=data_share_airtel_500mb_30days&phone=09046429626
 
->>>>>>> d7ef8e97875ab15c15501f43308ea3dcd3326b0e
 ###
 GET http://localhost:4000/data/me/get
 Authorization: Bearer {{token}}

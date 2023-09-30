@@ -18,8 +18,9 @@ const cors = require("cors");
 app.use(express.json());
 app.use(cors({
     
-    origin: 'https://appointment-virid.vercel.app'
+    // origin: 'https://appointment-virid.vercel.app'
     // origin: 'https://data-site-frontend.vercel.app'
+    origin: 'https://www.evpro.world/' 
     // origin: 'http://localhost:5173' 
   }));
 app.use((req,res,next)=>{

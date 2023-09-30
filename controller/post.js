@@ -34,7 +34,18 @@ const Get = async (req, res) => {
 }
 
 
-// @desc UPDATE user datav
+// @desc GET user appointments
+// @route POST/data/me/getall
+// @access PRIVATE
+const GetAll = async (req, res) => {
+
+    const goal = await Goal.find({})
+
+    res.status(200).json(goal)
+}
+
+
+// @desc UPDATE user data
 // @route POST/data/me/patch
 // @access PRIVATE
 const Patch = async (req, res) => {
@@ -47,4 +58,4 @@ const Patch = async (req, res) => {
     res.status(200).json(goal)
 }
 
-module.exports = { Post, Get, Patch }
+module.exports = { Post, Get, Patch, GetAll }
